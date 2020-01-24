@@ -1,3 +1,8 @@
+# TinyCircuits Temperature Sensor Wireling Example
+# Prints temperature value every 2 seconds.
+# Initialized: 01-24-2020
+# Last Updated: 01-24-2020
+
 import time
 import board
 import busio
@@ -23,4 +28,4 @@ print("High temp alert active high? %s"%pct.high_temp_active_high)
  
 while True:
     print("Temperature: %.2f C"%pct.temperature)
-    time.sleep(0.5)
+    time.sleep(2)
